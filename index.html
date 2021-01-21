@@ -7,6 +7,10 @@ body, html {
   height: 100%;
   margin: 0;
 }
+@font-face {
+    font-family: "myFont";
+    src: url("CreamCake.ttf");
+}
 
 .bg {
   /* The image used */
@@ -21,7 +25,7 @@ body, html {
   background-size: cover;
 }
   
-  .fullscreenDiv {
+.fullscreenDiv {
     width: 100%;
     height: auto;
     bottom: 0px;
@@ -31,13 +35,14 @@ body, html {
 }
 .center {
     position: absolute;
-    border: 1px solid blue;
-    width: 100px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
+    width: auto;
+    height: auto;
+    top: 25%;
+    left: 25%;
     margin-top: -25px;
     margin-left: -50px;
+    font-size: 5em;
+    font-family: myFont;
 }
 </style>
 </head>
@@ -46,8 +51,7 @@ body, html {
 <div class="bg"></div>
 <div class='fullscreenDiv'>
     <div class="center">
-       Happy Birthday Dad!
-      <hr>
+       Happy Birthday Dad!<br>
       A new year, <br>
       A fresh start, <br>
       A great adventure!
