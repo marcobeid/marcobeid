@@ -20,13 +20,35 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+  
+  .fullscreenDiv {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+.center {
+    position: absolute;
+    border: 1px solid blue;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -50px;
+}
 </style>
 </head>
 <body>
 
 <div class="bg"></div>
+<div class='fullscreenDiv'>
+    <div class="center">Hello World</div>
+</div>
 
-<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
 
 </body>
 </html>
